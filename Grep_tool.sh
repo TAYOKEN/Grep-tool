@@ -34,7 +34,7 @@ read option
 if [ "$option" -lt 4 ]; then
     echo "*******Choisir la chaine de caractère à trouver*******"
     echo -e "\033[1mNote: Utilisez '*' et '$' pour dire où doit se trouver votre chaine\033[0m"
-    echo -e "\033[1mAvant (ex: *a)= l'élement se trouve au debut de ligne Après (ex: a$) votre élément se trouve en fin de ligne\033[0m"
+    echo -e "\033[1mAvant (ex: *a)= l'élement se trouve au debut de ligne Après (ex: 'a$') votre élément se trouve en fin de ligne\033[0m"
     read trouv
     echo "Le caractère choisi est : $trouv"
     echo "******************************************************"
@@ -53,6 +53,8 @@ if [ "$option" -lt 4 ]; then
 
 else
     echo "*******Choisir les caractères à trouver*******"
+    echo -e "\033[1mNote: Utilisez '*' et '$' pour dire où doit se trouver votre chaine\033[0m"
+    echo -e "\033[1mAvant (ex: *a)= l'élement se trouve au debut de ligne Après (ex: 'a$') votre élément se trouve en fin de ligne\033[0m"
     echo "Caractère 1 : "
     read car1
     echo "Caractère 2 : "
